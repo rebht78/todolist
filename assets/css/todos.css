@@ -37,25 +37,6 @@ li:nth-child(2n)
 {
 	background-color: #f7f7f7;
 }
-
-li:hover span
-{
-	width: 40px;
-	opacity: 1.0;
-}
-#container
-{
-	box-shadow: 0 0 3px rgba(0,0,0,0.1);
-	margin:100px auto;
-	background-color: #f7f7f7;
-	width:360px;
-}
-#footer
-{
-	text-align: center;
-	color:white;
-	font-weight: normal;
-}
 .task
 {
 	text-align: center;
@@ -68,6 +49,26 @@ li:hover span
 	transition: 0.2s linear all;
 	opacity: 0;
 }
+li:hover span
+{
+	width: 40px;
+	opacity: 1.0;
+}
+
+#footer
+{
+	text-align: center;
+	color:white;
+	font-weight: normal;
+}
+#container
+{
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	margin:100px auto;
+	background-color: #f7f7f7;
+	width:360px;
+}
+
 .fa-question-circle-o {
 	clear:both;
 	margin-left:10px;
@@ -81,6 +82,10 @@ li:hover span
 .fa-pencil
 {
 	cursor: pointer;
+}
+.fa-heart
+{
+	color:red;
 }
 .todo_input
 {
