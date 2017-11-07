@@ -33,7 +33,11 @@ $(".fa-question-circle-o").click(function() {
 
 $(".fa-pencil").click(function() {
 	var headingContent = prompt("Enter To Do List Heading for your reference", "To Do List 1");
-	alert(headingContent);
-	$("#headerContent").val(headingContent);
+	if (!headingContent)
+	{
+		headingContent = "To Do List";
+	}
+	$("#headerContent").text(headingContent);
 
 });
+
