@@ -19,7 +19,7 @@ $(".todo_input").keypress(function(event){
 
 		$(this).val("");
 
-		$("ul").append("<li><span><i class='fa fa-trash'></i></span> "+todo_input+"</li>");
+		$("ul").append("<li><span class='task'><i class='fa fa-trash'></i></span> "+todo_input+"</li>");
 	}
 });
 
@@ -40,4 +40,3 @@ $(".fa-pencil").click(function() {
 	$("#headerContent").text(headingContent);
 
 });
-
