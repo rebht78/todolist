@@ -1,8 +1,14 @@
+html
+{
+	display:block;
+}
 body
 {
-	background:  -webkit-linear-gradient(90deg, #ED4264 10%, #FFEDBC 90%);
-	background: linear-gradient(90deg, #ED4264 10%, #FFEDBC 90%);
-	background: -moz-linear-gradient(90deg, #ED4264 10%, #FFEDBC 90%);
+	background: #43cea2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin:0;
+	width: 100%;
 }
 h1
 {
@@ -31,18 +37,7 @@ li:nth-child(2n)
 {
 	background-color: #f7f7f7;
 }
-span
-{
-	text-align: center;
-	margin-right: 20px;
-	background-color: #E74C3C;
-	color:white;
-	height: 40px;
-	width: 0px;
-	display: inline-block;
-	transition: 0.2s linear all;
-	opacity: 0;
-}
+
 li:hover span
 {
 	width: 40px;
@@ -60,6 +55,18 @@ li:hover span
 	text-align: center;
 	color:white;
 	font-weight: normal;
+}
+.task
+{
+	text-align: center;
+	margin-right: 20px;
+	background-color: #E74C3C;
+	color:white;
+	height: 40px;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear all;
+	opacity: 0;
 }
 .fa-question-circle-o {
 	clear:both;
